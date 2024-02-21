@@ -18,6 +18,11 @@ document.getElementById("btn-triangle").addEventListener("click", function () {
   const baseValue = getInputValue("t-base");
   const heightValue = getInputValue("t-height");
 
+  if(isNaN(baseValue) || isNaN(heightValue)) {
+    alert("Invalid input value");
+    return;
+  }
+
   const result = 0.5 * baseValue * heightValue;
 
   setValue("t-area", result);
@@ -28,6 +33,11 @@ document.getElementById("btn-triangle").addEventListener("click", function () {
 document.getElementById("btn-rectangle").addEventListener("click", function () {
   const baseValue = getInputValue("r-base");
   const heightValue = getInputValue("r-height");
+
+  if(isNaN(baseValue) || isNaN(heightValue)) {
+    alert("Invalid input value");
+    return;
+  }
 
   const result = baseValue * heightValue;
 
@@ -42,6 +52,11 @@ document
     const baseValue = getInputValue("p-base");
     const heightValue = getInputValue("p-height");
 
+    if(isNaN(baseValue) || isNaN(heightValue)) {
+        alert("Invalid input value");
+        return;
+      }
+
     const result = baseValue * heightValue;
 
     setValue("p-area", result);
@@ -52,6 +67,11 @@ document
 document.getElementById("btn-rhombus").addEventListener("click", function () {
   const baseValue = getInputValue("rh-base");
   const heightValue = getInputValue("rh-height");
+  
+  if(isNaN(baseValue) || isNaN(heightValue)) {
+    alert("Invalid input value");
+    return;
+  }
 
   const result = 0.5 * baseValue * heightValue;
 
@@ -64,6 +84,11 @@ document.getElementById("btn-pentagon").addEventListener("click", function () {
   const baseValue = getInputValue("pen-base");
   const heightValue = getInputValue("pen-height");
 
+  if(isNaN(baseValue) || isNaN(heightValue)) {
+    alert("Invalid input value");
+    return;
+  }
+
   const result = 0.5 * baseValue * heightValue;
 
   setValue("pen-area", result);
@@ -74,6 +99,11 @@ document.getElementById("btn-pentagon").addEventListener("click", function () {
 document.getElementById("btn-ellipse").addEventListener("click", function () {
   const baseValue = getInputValue("e-base");
   const heightValue = getInputValue("e-height");
+
+  if(isNaN(baseValue) || isNaN(heightValue)) {
+    alert("Invalid input value");
+    return;
+  }
 
   const result = 3.1416 * baseValue * heightValue;
 
